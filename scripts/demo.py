@@ -7,7 +7,7 @@ from std_srvs.srv import Trigger
 def callback_vel(date):
     vel = Twist()
     try:
-	if date.sum_all >= 2000:
+	if date.sum_all >= 3000:
 	    vel.linear.x = 0.0
 	else:
 	    vel.linear.x = 0.1
